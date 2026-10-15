@@ -17,7 +17,7 @@ Each exercise reuses a dataset I have already cleaned or analysed in Python, so 
 ## Related repositories
 
 - [land-registry-cleaning-pipeline](https://github.com/TomSCarter/land-registry-cleaning-pipeline): UK Land Registry Price Paid and EPC matching and cleaning pipeline in pandas, the source of the data for exercise 02
-- [sql_training_log][(https://github.com/TomSCarter/sql_training_log): SQL practice log
+- [sql_training_log](https://github.com/TomSCarter/sql_training_log): SQL practice log
 
 ## Data
 
