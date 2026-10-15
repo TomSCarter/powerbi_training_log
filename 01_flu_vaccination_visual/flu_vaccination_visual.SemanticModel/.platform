@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "flu_vaccination_visual"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "cf5e268a-90e9-49fc-bfa0-70c637c2cc2e"
+  }
+}

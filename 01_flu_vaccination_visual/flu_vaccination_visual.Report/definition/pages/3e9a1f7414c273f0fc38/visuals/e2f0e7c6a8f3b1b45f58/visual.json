@@ -1,0 +1,146 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "e2f0e7c6a8f3b1b45f58",
+  "position": {
+    "x": 35.714285714285715,
+    "y": 557.14285714285722,
+    "z": 2000,
+    "height": 320,
+    "width": 600,
+    "tabOrder": 2000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "pharmacy_adult_flu_pay_current_202512"
+                    }
+                  },
+                  "Property": "BNF_PRESENTATION_CODE"
+                }
+              },
+              "queryRef": "pharmacy_adult_flu_pay_current_202512.BNF_PRESENTATION_CODE",
+              "nativeQueryRef": "BNF_PRESENTATION_CODE"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "pharmacy_adult_flu_pay_current_202512"
+                        }
+                      },
+                      "Property": "SEASON_DRUG_COST_GBP"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(pharmacy_adult_flu_pay_current_202512.SEASON_DRUG_COST_GBP)",
+              "nativeQueryRef": "Sum of SEASON_DRUG_COST_GBP",
+              "displayName": "Total season spend (£)"
+            },
+            {
+              "field": {
+                "Arithmetic": {
+                  "Left": {
+                    "Aggregation": {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "pharmacy_adult_flu_pay_current_202512"
+                            }
+                          },
+                          "Property": "SEASON_DRUG_COST_GBP"
+                        }
+                      },
+                      "Function": 0
+                    }
+                  },
+                  "Right": {
+                    "ScopedEval": {
+                      "Expression": {
+                        "Aggregation": {
+                          "Expression": {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "pharmacy_adult_flu_pay_current_202512"
+                                }
+                              },
+                              "Property": "SEASON_DRUG_COST_GBP"
+                            }
+                          },
+                          "Function": 0
+                        }
+                      },
+                      "Scope": []
+                    }
+                  },
+                  "Operator": 3
+                }
+              },
+              "queryRef": "Divide(Sum(pharmacy_adult_flu_pay_current_202512.SEASON_DRUG_COST_GBP), ScopedEval(Sum(pharmacy_adult_flu_pay_current_202512.SEASON_DRUG_COST_GBP), []))",
+              "nativeQueryRef": "Total season spend (%)",
+              "displayName": "Total season spend (%)"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "values": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "stylePreset": [
+        {
+          "properties": {
+            "name": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Minimal'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

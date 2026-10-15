@@ -1,0 +1,194 @@
+table pharmacy_adult_flu_pay_current_202512
+	lineageTag: 8f47553d-8ed0-4051-86e9-7efef559b887
+
+	column FLU_SEASON_START_MONTH
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 9f7b6d19-0027-4152-a5eb-8da0433c3511
+		summarizeBy: none
+		sourceColumn: FLU_SEASON_START_MONTH
+
+		variation Variation
+			isDefault
+			relationship: 5c90c0af-81fe-4c6b-8ddd-ce6952993e56
+			defaultHierarchy: LocalDateTable_882ba8c8-6e20-4d94-9a54-b6fb8943eb82.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column LATEST_PROCESSED_MONTH
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 6f4aee06-2339-4b71-b55a-42eef6bfe669
+		summarizeBy: none
+		sourceColumn: LATEST_PROCESSED_MONTH
+
+		variation Variation
+			isDefault
+			relationship: 972005f7-2d27-4dbe-be01-637b8f8ea317
+			defaultHierarchy: LocalDateTable_2dd0f1a7-d50a-4a3f-88dc-b17aae8289e6.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column REGION_CODE
+		dataType: string
+		lineageTag: 0559945b-efa2-47d8-9398-9c832ba93b52
+		summarizeBy: none
+		sourceColumn: REGION_CODE
+
+		annotation SummarizationSetBy = Automatic
+
+	column REGION_NAME
+		dataType: string
+		lineageTag: 589add28-4bfd-4b5e-9460-e19566541260
+		summarizeBy: none
+		sourceColumn: REGION_NAME
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICB_CODE
+		dataType: string
+		lineageTag: bc0c2290-ecc4-47e1-b48b-37c6cb752378
+		summarizeBy: none
+		sourceColumn: ICB_CODE
+
+		annotation SummarizationSetBy = Automatic
+
+	column ICB_NAME
+		dataType: string
+		lineageTag: 352e0312-2c03-4df0-b907-8cce57a9a03c
+		summarizeBy: none
+		sourceColumn: ICB_NAME
+
+		annotation SummarizationSetBy = Automatic
+
+	column DISPENSER_CODE
+		dataType: string
+		lineageTag: 0b002f24-c95d-4985-9e26-64c7a1730033
+		summarizeBy: none
+		sourceColumn: DISPENSER_CODE
+
+		annotation SummarizationSetBy = Automatic
+
+	column DISPENSER_NAME
+		dataType: string
+		lineageTag: 5348b5f1-c4df-4e3a-8aca-aa30d5cb3086
+		summarizeBy: none
+		sourceColumn: DISPENSER_NAME
+
+		annotation SummarizationSetBy = Automatic
+
+	column DISPENSER_TRADING_NAME
+		dataType: string
+		lineageTag: f5fb10f1-9c47-4af7-9692-31708f51672e
+		summarizeBy: none
+		sourceColumn: DISPENSER_TRADING_NAME
+
+		annotation SummarizationSetBy = Automatic
+
+	column MANUFACTURER
+		dataType: string
+		lineageTag: 71bc084e-272d-44e3-9a2c-5c47b4f64943
+		summarizeBy: none
+		sourceColumn: MANUFACTURER
+
+		annotation SummarizationSetBy = Automatic
+
+	column VACCINE_NAME
+		dataType: string
+		lineageTag: c5a934e0-3311-4cd2-8efb-770a8663c97a
+		summarizeBy: none
+		sourceColumn: VACCINE_NAME
+
+		annotation SummarizationSetBy = Automatic
+
+	column AMPP_SNOMED_CODE
+		dataType: int64
+		formatString: 0
+		lineageTag: 715b09c1-b907-43a7-bf42-563d2723aaa5
+		summarizeBy: sum
+		sourceColumn: AMPP_SNOMED_CODE
+
+		annotation SummarizationSetBy = Automatic
+
+	column BNF_PRESENTATION_CODE
+		dataType: string
+		lineageTag: 8462e6d7-1d94-4320-99a0-01f51c9ab17f
+		summarizeBy: none
+		sourceColumn: BNF_PRESENTATION_CODE
+
+		annotation SummarizationSetBy = Automatic
+
+	column LATEST_PROCESSED_MONTH_NUMBER_OF_DOSES
+		dataType: int64
+		formatString: 0
+		lineageTag: 70596ff9-44a0-4570-9052-64ec110db6f9
+		summarizeBy: sum
+		sourceColumn: LATEST_PROCESSED_MONTH_NUMBER_OF_DOSES
+
+		annotation SummarizationSetBy = Automatic
+
+	column LATEST_PROCESSED_MONTH_DRUG_COST_GBP
+		dataType: double
+		lineageTag: 00d317fe-4200-4a3c-9599-2c07deeb43c5
+		summarizeBy: sum
+		sourceColumn: LATEST_PROCESSED_MONTH_DRUG_COST_GBP
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column LATEST_PROCESSED_MONTH_FEES_GBP
+		dataType: double
+		lineageTag: d25c603a-3984-4999-aff3-6801283fee09
+		summarizeBy: sum
+		sourceColumn: LATEST_PROCESSED_MONTH_FEES_GBP
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column SEASON_NUMBER_OF_DOSES
+		dataType: int64
+		formatString: 0
+		lineageTag: 1ffcfba5-6d46-4a6f-bb85-57d86d9222a0
+		summarizeBy: sum
+		sourceColumn: SEASON_NUMBER_OF_DOSES
+
+		annotation SummarizationSetBy = Automatic
+
+	column SEASON_DRUG_COST_GBP
+		dataType: double
+		lineageTag: 7581d758-70e5-4f89-a2d6-8e67e67f0b5b
+		summarizeBy: sum
+		sourceColumn: SEASON_DRUG_COST_GBP
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column SEASON_TOTAL_FEE_COST_GBP
+		dataType: double
+		lineageTag: cb90fa42-dc73-4ce7-9186-446bb17002c1
+		summarizeBy: sum
+		sourceColumn: SEASON_TOTAL_FEE_COST_GBP
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition pharmacy_adult_flu_pay_current_202512 = m
+		mode: import
+		source =
+				let
+				  Source = Csv.Document(File.Contents("C:\Users\Tom\Exercism\python\Week_8_Jupyter_git\Capstone\data\pharmacy_adult_flu_pay_current_202512.csv"), [Delimiter = ",", Columns = 19, Encoding = 65001]),
+				  #"Promoted headers" = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				  #"Changed column type" = Table.TransformColumnTypes(#"Promoted headers", {{"FLU_SEASON_START_MONTH", type date}, {"LATEST_PROCESSED_MONTH", type date}, {"REGION_CODE", type text}, {"REGION_NAME", type text}, {"ICB_CODE", type text}, {"ICB_NAME", type text}, {"DISPENSER_CODE", type text}, {"DISPENSER_NAME", type text}, {"DISPENSER_TRADING_NAME", type text}, {"MANUFACTURER", type text}, {"VACCINE_NAME", type text}, {"AMPP_SNOMED_CODE", Int64.Type}, {"BNF_PRESENTATION_CODE", type text}, {"LATEST_PROCESSED_MONTH_NUMBER_OF_DOSES", Int64.Type}, {"LATEST_PROCESSED_MONTH_DRUG_COST_GBP", type number}, {"LATEST_PROCESSED_MONTH_FEES_GBP", type number}, {"SEASON_NUMBER_OF_DOSES", Int64.Type}, {"SEASON_DRUG_COST_GBP", type number}, {"SEASON_TOTAL_FEE_COST_GBP", type number}}, "en-US")
+				in
+				  #"Changed column type"
+
+	annotation PBI_ResultType = Table
+

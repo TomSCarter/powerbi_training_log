@@ -1,0 +1,10 @@
+relationship 5c90c0af-81fe-4c6b-8ddd-ce6952993e56
+	joinOnDateBehavior: datePartOnly
+	fromColumn: pharmacy_adult_flu_pay_current_202512.FLU_SEASON_START_MONTH
+	toColumn: LocalDateTable_882ba8c8-6e20-4d94-9a54-b6fb8943eb82.Date
+
+relationship 972005f7-2d27-4dbe-be01-637b8f8ea317
+	joinOnDateBehavior: datePartOnly
+	fromColumn: pharmacy_adult_flu_pay_current_202512.LATEST_PROCESSED_MONTH
+	toColumn: LocalDateTable_2dd0f1a7-d50a-4a3f-88dc-b17aae8289e6.Date
+

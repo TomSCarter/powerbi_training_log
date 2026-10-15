@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "flu_vaccination_visual"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "9a4f8515-f1c9-406f-aa48-1b62cf3970f5"
+  }
+}

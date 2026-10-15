@@ -1,0 +1,22 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-GB
+	valueFilterBehavior: independent
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["pharmacy_adult_flu_pay_current_202512"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table pharmacy_adult_flu_pay_current_202512
+ref table DateTableTemplate_8081ab5a-a807-4e46-ac23-18b1bb2c30d3
+ref table LocalDateTable_882ba8c8-6e20-4d94-9a54-b6fb8943eb82
+ref table LocalDateTable_2dd0f1a7-d50a-4a3f-88dc-b17aae8289e6
+
+ref cultureInfo en-US
+
