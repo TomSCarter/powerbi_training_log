@@ -27,3 +27,7 @@ To recreate it:
     4. exclude records with construction_age_band < 4 characters (has no nulls)
         - keep construction_age_band >= 4 characters
 3. Impute floor_height with whole-set median (after invalid values are set to null, exclusions are applied and ignoring nulls) and add floor_height_imputed flag (boolean: True for imputed, False otherwise)
+
+# Notes
+
+- Empty text box gives "" empty string not null

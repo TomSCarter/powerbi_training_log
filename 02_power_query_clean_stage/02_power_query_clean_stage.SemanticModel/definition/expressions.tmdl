@@ -1,0 +1,18 @@
+expression FlatTypes =
+		let
+		    Source = {"Flat", "Maisonette"} meta [IsParameterQuery = true, IsParameterQueryRequired = false, Type = type list]
+		in
+		    Source
+	lineageTag: c4ef6171-1828-4bff-a0b2-614f944f6836
+
+	annotation PBI_ResultType = List
+
+expression DataFolder =
+		let
+		    Source = "C:\Users\Tom\Exercism\python\powerbi_training_log\data\" meta [IsParameterQuery = true, IsParameterQueryRequired = false, Type = type text]
+		in
+		    Source
+	lineageTag: 2a8dac46-70bb-400d-8564-4aa2e69ddbbf
+
+	annotation PBI_ResultType = Text
+

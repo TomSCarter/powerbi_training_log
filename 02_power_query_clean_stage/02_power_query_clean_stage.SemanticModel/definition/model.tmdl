@@ -11,5 +11,13 @@ annotation __PBI_TimeIntelligenceEnabled = 1
 
 annotation PBI_ProTooling = ["DevMode"]
 
+annotation PBI_QueryOrder = ["pre_clean_export","FlatTypes","DataFolder"]
+
+ref table pre_clean_export
+ref table DateTableTemplate_9f160e61-f68b-4a41-9cf5-4cb8a0734e65
+ref table LocalDateTable_9f05b2d3-3dd4-4b42-9f82-53d28ec46f5b
+ref table LocalDateTable_5d110733-af3a-40dc-ae07-311fb9a3fc3e
+ref table LocalDateTable_c2d2ea5a-0910-4f15-acdb-6f485dadd88d
+
 ref cultureInfo en-US
 

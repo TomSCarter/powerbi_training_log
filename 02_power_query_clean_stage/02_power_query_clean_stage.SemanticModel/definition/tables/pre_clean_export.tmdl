@@ -1,0 +1,424 @@
+table pre_clean_export
+	lineageTag: cb4891ee-417c-4bed-bf17-5ab488991135
+
+	column unique_id
+		dataType: string
+		lineageTag: 6417f213-1efa-4e12-aabf-61c1b05a2f66
+		summarizeBy: none
+		sourceColumn: unique_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column price_paid
+		dataType: int64
+		formatString: 0
+		lineageTag: 4f563e8c-cf13-4230-949a-37910f60d096
+		summarizeBy: sum
+		sourceColumn: price_paid
+
+		annotation SummarizationSetBy = Automatic
+
+	column deed_date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: c8e5d319-923b-4ff4-93fa-8d39f576ef16
+		summarizeBy: none
+		sourceColumn: deed_date
+
+		variation Variation
+			isDefault
+			relationship: b26d650e-d0af-473b-aca2-74722bd2157d
+			defaultHierarchy: LocalDateTable_9f05b2d3-3dd4-4b42-9f82-53d28ec46f5b.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column address
+		dataType: string
+		lineageTag: 274e3188-b0fd-4303-9795-a4f642a27b55
+		summarizeBy: none
+		sourceColumn: address
+
+		annotation SummarizationSetBy = Automatic
+
+	column saon
+		dataType: string
+		lineageTag: 33308354-3cbd-4999-b604-6d9e4d3fa246
+		summarizeBy: none
+		sourceColumn: saon
+
+		annotation SummarizationSetBy = Automatic
+
+	column paon
+		dataType: string
+		lineageTag: 22e1f1e4-3ffc-417a-8ac3-8b83b47bf25c
+		summarizeBy: none
+		sourceColumn: paon
+
+		annotation SummarizationSetBy = Automatic
+
+	column street
+		dataType: string
+		lineageTag: f4d18caf-37c6-4ca2-92be-2164a903b1e1
+		summarizeBy: none
+		sourceColumn: street
+
+		annotation SummarizationSetBy = Automatic
+
+	column locality
+		dataType: string
+		lineageTag: 6a002e2b-7ebd-4b0c-a04b-583c9350b1df
+		summarizeBy: none
+		sourceColumn: locality
+
+		annotation SummarizationSetBy = Automatic
+
+	column town
+		dataType: string
+		lineageTag: b77819b4-19e5-4937-99ac-68ad8f49c405
+		summarizeBy: none
+		sourceColumn: town
+
+		annotation SummarizationSetBy = Automatic
+
+	column district
+		dataType: string
+		lineageTag: 59ebbe11-de62-40b9-8cd6-dfaea46008b1
+		summarizeBy: none
+		sourceColumn: district
+
+		annotation SummarizationSetBy = Automatic
+
+	column postcode
+		dataType: string
+		lineageTag: af4da595-4ad2-4510-a04c-5b9a59a469eb
+		summarizeBy: none
+		sourceColumn: postcode
+
+		annotation SummarizationSetBy = Automatic
+
+	column property_subtype
+		dataType: string
+		lineageTag: de04c2fb-9291-48e5-85c8-8bba8a4ad316
+		summarizeBy: none
+		sourceColumn: property_subtype
+
+		annotation SummarizationSetBy = Automatic
+
+	column new_build
+		dataType: string
+		lineageTag: a95e3969-326c-4925-8a98-599e152fbbe8
+		summarizeBy: none
+		sourceColumn: new_build
+
+		annotation SummarizationSetBy = Automatic
+
+	column estate_type
+		dataType: string
+		lineageTag: d8f8c883-5e95-41c9-ba13-9cf1a5deff91
+		summarizeBy: none
+		sourceColumn: estate_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column transaction_category
+		dataType: string
+		lineageTag: 2b1b7a70-cab5-46e5-872d-77c2c0697167
+		summarizeBy: none
+		sourceColumn: transaction_category
+
+		annotation SummarizationSetBy = Automatic
+
+	column certificate_number
+		dataType: string
+		lineageTag: 9c15e5b9-110d-4955-afff-81505f082430
+		summarizeBy: none
+		sourceColumn: certificate_number
+
+		annotation SummarizationSetBy = Automatic
+
+	column built_form
+		dataType: string
+		lineageTag: a06f19c9-3470-4d48-a96f-285679c78c1e
+		summarizeBy: none
+		sourceColumn: built_form
+
+		annotation SummarizationSetBy = Automatic
+
+	column construction_age_band
+		dataType: string
+		lineageTag: cc647960-7f82-452d-81dd-25186d1b1a57
+		summarizeBy: none
+		sourceColumn: construction_age_band
+
+		annotation SummarizationSetBy = Automatic
+
+	column current_energy_efficiency
+		dataType: int64
+		formatString: 0
+		lineageTag: d9e92aff-95d6-4cde-b70f-ee5604a31227
+		summarizeBy: sum
+		sourceColumn: current_energy_efficiency
+
+		annotation SummarizationSetBy = Automatic
+
+	column current_energy_rating
+		dataType: string
+		lineageTag: 1e3e5f38-0df8-41d6-98de-7e8ee5cf4096
+		summarizeBy: none
+		sourceColumn: current_energy_rating
+
+		annotation SummarizationSetBy = Automatic
+
+	column energy_consumption_current
+		dataType: int64
+		formatString: 0
+		lineageTag: f94f0624-e000-48a8-9cc0-3389b4af5eda
+		summarizeBy: sum
+		sourceColumn: energy_consumption_current
+
+		annotation SummarizationSetBy = Automatic
+
+	column extension_count
+		dataType: double
+		lineageTag: 9eb3dbc2-b90b-403b-958a-3a909f4a3aed
+		summarizeBy: sum
+		sourceColumn: extension_count
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column heating_cost_current
+		dataType: int64
+		formatString: 0
+		lineageTag: 21b5c62f-bc28-4f3a-aee9-6e24aa1237d4
+		summarizeBy: sum
+		sourceColumn: heating_cost_current
+
+		annotation SummarizationSetBy = Automatic
+
+	column inspection_date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: ca9be567-3408-432d-8c10-e7fd838fed03
+		summarizeBy: none
+		sourceColumn: inspection_date
+
+		variation Variation
+			isDefault
+			relationship: 44b897d2-8ed6-4561-a781-a10920b8d388
+			defaultHierarchy: LocalDateTable_5d110733-af3a-40dc-ae07-311fb9a3fc3e.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column lodgement_date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: b456fd24-639f-40b3-b595-82e493d2a23d
+		summarizeBy: none
+		sourceColumn: lodgement_date
+
+		variation Variation
+			isDefault
+			relationship: da1190dc-e971-40dc-922c-21c32bc21cd4
+			defaultHierarchy: LocalDateTable_c2d2ea5a-0910-4f15-acdb-6f485dadd88d.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column number_habitable_rooms
+		dataType: double
+		lineageTag: 3c987495-4c18-42f4-9e7f-d660d1d2186a
+		summarizeBy: sum
+		sourceColumn: number_habitable_rooms
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column number_heated_rooms
+		dataType: double
+		lineageTag: 2b93c004-7c4d-4c20-a29e-dde462239ec5
+		summarizeBy: sum
+		sourceColumn: number_heated_rooms
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column potential_energy_efficiency
+		dataType: int64
+		formatString: 0
+		lineageTag: 1f576ac7-1daa-49b8-a136-af18131dac38
+		summarizeBy: sum
+		sourceColumn: potential_energy_efficiency
+
+		annotation SummarizationSetBy = Automatic
+
+	column property_type
+		dataType: string
+		lineageTag: 6b5bbf6b-86fd-4859-baad-167baf2a6c87
+		summarizeBy: none
+		sourceColumn: property_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column tenure
+		dataType: string
+		lineageTag: 5f4660ef-3718-4041-881d-0d0073d48142
+		summarizeBy: none
+		sourceColumn: tenure
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_floor_area
+		dataType: int64
+		formatString: 0
+		lineageTag: aa742f0c-695c-4126-bae0-5123b6e2a511
+		summarizeBy: sum
+		sourceColumn: total_floor_area
+
+		annotation SummarizationSetBy = Automatic
+
+	column transaction_type
+		dataType: string
+		lineageTag: 0c6e1169-222c-4ccd-aa6f-616f50bdf8cf
+		summarizeBy: none
+		sourceColumn: transaction_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column uprn
+		dataType: int64
+		formatString: 0
+		lineageTag: c6cda3b4-b044-48f3-9408-257154a1e232
+		summarizeBy: sum
+		sourceColumn: uprn
+
+		annotation SummarizationSetBy = Automatic
+
+	column uprn_source
+		dataType: string
+		lineageTag: d836521a-8e40-46b4-a977-5392e53f8e6a
+		summarizeBy: none
+		sourceColumn: uprn_source
+
+		annotation SummarizationSetBy = Automatic
+
+	column inspection_to_sale
+		dataType: int64
+		formatString: 0
+		lineageTag: f28000ec-3fa6-4747-af8c-359a19d793ad
+		summarizeBy: sum
+		sourceColumn: inspection_to_sale
+
+		annotation SummarizationSetBy = Automatic
+
+	column EPC_age_band
+		dataType: string
+		lineageTag: 2440be64-0ee7-473e-8fa3-545abd26b17e
+		summarizeBy: none
+		sourceColumn: EPC_age_band
+
+		annotation SummarizationSetBy = Automatic
+
+	column EPC_expired
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 97aabcc6-f0e4-4736-8fe0-76249043fc5d
+		summarizeBy: none
+		sourceColumn: EPC_expired
+
+		annotation SummarizationSetBy = Automatic
+
+	column dayofweek
+		dataType: int64
+		formatString: 0
+		lineageTag: 601f2d5b-6fed-4b63-a05a-895d3d8e9f98
+		summarizeBy: sum
+		sourceColumn: dayofweek
+
+		annotation SummarizationSetBy = Automatic
+
+	column day
+		dataType: int64
+		formatString: 0
+		lineageTag: bfdd19bd-ce2a-4f1c-ac07-f5fead05f7da
+		summarizeBy: sum
+		sourceColumn: day
+
+		annotation SummarizationSetBy = Automatic
+
+	column month
+		dataType: int64
+		formatString: 0
+		lineageTag: 4bee8084-cca8-4f76-a666-22f192c3cf4d
+		summarizeBy: sum
+		sourceColumn: month
+
+		annotation SummarizationSetBy = Automatic
+
+	column quarter
+		dataType: int64
+		formatString: 0
+		lineageTag: 3154e08c-fb0f-428d-8320-ef854fd1ca82
+		summarizeBy: sum
+		sourceColumn: quarter
+
+		annotation SummarizationSetBy = Automatic
+
+	column year
+		dataType: int64
+		formatString: 0
+		lineageTag: dba945cc-99cb-4f8b-873b-79c29521b7ae
+		summarizeBy: sum
+		sourceColumn: year
+
+		annotation SummarizationSetBy = Automatic
+
+	column floor_height
+		dataType: double
+		lineageTag: 52abdc7d-99c3-4baf-9c09-4eee66f49719
+		summarizeBy: sum
+		sourceColumn: floor_height
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column floor_height_imputed
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: b69fe609-847c-4461-9383-d3845980403d
+		summarizeBy: none
+		sourceColumn: floor_height_imputed
+
+		annotation SummarizationSetBy = Automatic
+
+	partition pre_clean_export = m
+		mode: import
+		source =
+				let
+				    Source = Parquet.Document(File.Contents(DataFolder & "pre_clean_export.parquet"), [Compression=null, LegacyColumnNameEncoding=false, MaxDepth=null]),
+				  #"Invalid values to null: placeholders in property_type and built_form" = Table.ReplaceValue(Source, "Not Recorded", null, Replacer.ReplaceValue, {"property_type", "built_form"}),
+				  #"Invalid values to null: placeholder in tenure" = Table.ReplaceValue(#"Invalid values to null: placeholders in property_type and built_form", "unknown", null, Replacer.ReplaceValue, {"tenure"}),
+				  #"Invalid values to null: heated rooms" = Table.ReplaceValue(#"Invalid values to null: placeholder in tenure", 0, null, Replacer.ReplaceValue, {"number_heated_rooms"}),
+				  #"Invalid values to null: floor_height below 1.5 (new column)" = Table.AddColumn(#"Invalid values to null: heated rooms", "floor_height_nulled", each if ([floor_height] <> null and [floor_height] < 1.5) then null else [floor_height]),
+				  #"Invalid values to null: remove original floor_height" = Table.RemoveColumns(#"Invalid values to null: floor_height below 1.5 (new column)", {"floor_height"}),
+				  #"Invalid values to null: rename floor_height column" = Table.RenameColumns(#"Invalid values to null: remove original floor_height", {{"floor_height_nulled", "floor_height"}}),
+				  #"Invalid values to null: set floor_height type" = Table.TransformColumnTypes(#"Invalid values to null: rename floor_height column", {{"floor_height", type number}}),
+				  #"Apply exclusions: floor area 9 sqm or under" = Table.SelectRows(#"Invalid values to null: set floor_height type", each [total_floor_area] > 9),
+				  #"Apply exclusions: huge properties with few or null rooms" = Table.SelectRows(#"Apply exclusions: floor area 9 sqm or under", each [total_floor_area] <= 2000 or ([number_habitable_rooms] > 7 and [number_habitable_rooms] <> null)),
+				  #"Apply exclusions: flats/maisonettes with very high efficiency" = Table.SelectRows(#"Apply exclusions: huge properties with few or null rooms", each [current_energy_efficiency] <= 110 or [energy_consumption_current] <= 200 or not List.Contains(FlatTypes, [property_type])),
+				  #"Apply exclusions: add construction_age_band length" = Table.AddColumn(#"Apply exclusions: flats/maisonettes with very high efficiency", "Length", each Text.Length([construction_age_band]), type nullable number),
+				  #"Apply exclusions: construction_age_band under 4 characters" = Table.SelectRows(#"Apply exclusions: add construction_age_band length", each [Length] >= 4),
+				  #"Apply exclusions: remove length helper column" = Table.RemoveColumns(#"Apply exclusions: construction_age_band under 4 characters", {"Length"}),
+				  #"Impute floor height: Add floor_height imputed flag" = Table.AddColumn(#"Apply exclusions: remove length helper column", "floor_height_imputed", each [floor_height] = null),
+				  #"Impute floor height: Change type on flag column" = Table.TransformColumnTypes(#"Impute floor height: Add floor_height imputed flag", {{"floor_height_imputed", type logical}}),
+				  #"Impute floor height: Calculate median floor height" = List.Median(#"Impute floor height: Change type on flag column"[floor_height]),
+				  #"Impute floor height: Return table after median" = #"Impute floor height: Change type on flag column",
+				  #"Impute floor height: Impute" = Table.ReplaceValue(#"Impute floor height: Return table after median", null, #"Impute floor height: Calculate median floor height", Replacer.ReplaceValue, {"floor_height"})
+				in
+				    #"Impute floor height: Impute"
+
+	annotation PBI_ResultType = Table
+

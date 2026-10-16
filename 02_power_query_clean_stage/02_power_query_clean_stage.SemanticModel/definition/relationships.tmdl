@@ -1,0 +1,15 @@
+relationship b26d650e-d0af-473b-aca2-74722bd2157d
+	joinOnDateBehavior: datePartOnly
+	fromColumn: pre_clean_export.deed_date
+	toColumn: LocalDateTable_9f05b2d3-3dd4-4b42-9f82-53d28ec46f5b.Date
+
+relationship 44b897d2-8ed6-4561-a781-a10920b8d388
+	joinOnDateBehavior: datePartOnly
+	fromColumn: pre_clean_export.inspection_date
+	toColumn: LocalDateTable_5d110733-af3a-40dc-ae07-311fb9a3fc3e.Date
+
+relationship da1190dc-e971-40dc-922c-21c32bc21cd4
+	joinOnDateBehavior: datePartOnly
+	fromColumn: pre_clean_export.lodgement_date
+	toColumn: LocalDateTable_c2d2ea5a-0910-4f15-acdb-6f485dadd88d.Date
+
