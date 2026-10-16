@@ -11,7 +11,7 @@ Each exercise reuses a dataset I have already cleaned or analysed in Python, so 
 | # | Exercise | Skills | Status |
 |---|---|---|---|
 | 01 | [Flu vaccination visual](01_flu_vaccination_visual/) | Rebuilding a visual from my Week 8 capstone | Complete |
-| 02 | [Power Query: cleaning stage](02_power_query_clean_stage/) | Power Query, M, conditional logic, imputation | In progress |
+| 02 | [Power Query: cleaning stage](02_power_query_clean_stage/) | Power Query, M, conditional logic, imputation | Complete |
 | 03 | [Star schema and DAX](03_star_schema_dax/) | Data modelling, relationships, DAX measures | Planned |
 
 ## Related repositories
