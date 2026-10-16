@@ -48,7 +48,7 @@ The pandas pipeline only reports the total number of exclusions. Applying each r
 
 ![Power Query Applied Steps pane listing the cleaning steps, grouped as invalid values to null, exclusions and floor height imputation](screenshots/applied_steps.png)
 
-Full query: [link to the file in `.SemanticModel/`]
+Full query: [Link](https://github.com/TomSCarter/powerbi_training_log/blob/main/02_power_query_clean_stage/02_power_query_clean_stage.SemanticModel/definition/tables/pre_clean_export.tmdl)
 
 ## Notes
 
